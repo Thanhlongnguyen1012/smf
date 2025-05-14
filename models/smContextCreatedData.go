@@ -1,5 +1,6 @@
 package models
 
 type SMContextCreatedData struct {
-	PduSessionID string `json:"pduSessionId"`
+	PduSessionID int32  `json:"pduSessionId"`
+	SNssai       string `json:"sNssai,omitempty"`
 }

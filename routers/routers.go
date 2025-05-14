@@ -8,9 +8,9 @@ import (
 
 func SetupRouter() *gin.Engine {
 	r := gin.Default()
-	api := r.Group("/smf")
+	api := r.Group("/nsmf-pdusession")
 	{
-		api.POST("/sm-context", handlers.CreateSMContextHandler)
+		api.POST("/v1/sm-contexts/", handlers.CreateSMContextHandler)
 	}
 	return r
 }
